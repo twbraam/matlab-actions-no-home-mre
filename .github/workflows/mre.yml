@@ -28,3 +28,4 @@ jobs:
           ls $HOME/.matlab/R2022a
           echo "-- licenses --"
           ls $HOME/.matlab/licenses
+          cat $HOME/.matlab/licenses/batch.lic
