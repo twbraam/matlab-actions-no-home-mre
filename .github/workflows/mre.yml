@@ -22,8 +22,5 @@ jobs:
         run: |
           # Example of MATLAB working correctly
           matlab -nosplash -nojvm -logfile "matlabVersionLog.cmaketmp" -nodesktop -nodisplay -batch "version, exit"
-          # Redefine home and run matlab again
-          mkdir $HOME/newhome
-          export HOME=$HOME/newhome
-          matlab -nosplash -nojvm -logfile "matlabVersionLog.cmaketmp" -nodesktop -nodisplay -batch "version, exit"
-
+          ls $HOME/.matlab
+          ls $HOME/.matlab/R2022a_licenses
