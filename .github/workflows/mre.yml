@@ -22,8 +22,6 @@ jobs:
         run: |
           # Example of MATLAB working correctly
           matlab -nosplash -nojvm -logfile "matlabVersionLog.cmaketmp" -nodesktop -nodisplay -batch "version, exit"
-          echo "-- root --"
-          ls $HOME/.matlab
           echo "-- R2022a--"
           ls $HOME/.matlab/R2022a
           echo "-- licenses --"
